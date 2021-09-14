@@ -4,20 +4,20 @@
   <a href="https://www.python.org">
     <img src="http://ForTheBadge.com/images/badges/made-with-python.svg" width ="250">
   </a>
-  <a href="https://t.me/CodeXBotz">
-    <img src="https://github.com/CodeXBotz/PyrogramGenStr/blob/main/resources/madebycodex-badge.svg" width="250">
+  <a href="https://t.me/Movies_emperio">
+    <img src="https://img.shields.io/badge/MADE%20BY-%F0%9D%90%8C%F0%9D%90%8E%F0%9D%90%95%F0%9D%90%88%F0%9D%90%84%F0%9D%90%92%20%F0%9D%90%84%F0%9D%90%8C%F0%9D%90%8F%F0%9D%90%8E%F0%9D%90%91%F0%9D%90%88%F0%9D%90%8E-orange" width="250" height="39">
   </a><br>
-  <a href="https://t.me/CodeXBotz">
-    &nbsp;<img src="https://img.shields.io/badge/Code%20%F0%9D%95%8F%20Botz-Channel-blue?style=flat-square&logo=telegram" width="130" height="18">&nbsp;
+  <a href="https://t.me/Movies_emperio">
+    &nbsp;<img src="https://img.shields.io/badge/%F0%9D%90%8C%F0%9D%90%8E%F0%9D%90%95%F0%9D%90%88%F0%9D%90%84%F0%9D%90%92%20%F0%9D%90%84%F0%9D%90%8C%F0%9D%90%8F%F0%9D%90%8E%F0%9D%90%91%F0%9D%90%88%F0%9D%90%8E-CHANNEL%20-yellowgreen?style=flat-square&logo=telegram" width="130" height="18">&nbsp;
   </a>
-  <a href="https://t.me/codexbotzsupport">
-    &nbsp;<img src="https://img.shields.io/badge/Code%20%F0%9D%95%8F%20Botz-Group-blue?style=flat-square&logo=telegram" width="130" height="18">&nbsp;
+  <a href="https://t.me/Cinemas_Empire">
+    &nbsp;<img src="https://img.shields.io/badge/%F0%9D%90%8C%F0%9D%90%8E%F0%9D%90%95%F0%9D%90%88%F0%9D%90%84%F0%9D%90%92%20%F0%9D%90%84%F0%9D%90%8C%F0%9D%90%8F%F0%9D%90%8E%F0%9D%90%91%F0%9D%90%88%F0%9D%90%8E-GROUP-yellowgreen?style=flat-square&logo=telegram" width="130" height="18">&nbsp;
   </a>
   <br>
-  <a href="https://github.com/CodeXBotz/File-Sharing-Bot/stargazers">
+  <a href="https://github.com/leanardo7994/File-Sharing-Bot/stargazers">
     <img src="https://img.shields.io/github/stars/CodeXBotz/File-Sharing-Bot?style=social">
   </a>
-  <a href="https://github.com/CodeXBotz/File-Sharing-Bot/fork">
+  <a href="https://github.com/leanardo7994/File-Sharing-Bot/fork">
     <img src="https://img.shields.io/github/forks/CodeXBotz/File-Sharing-Bot?label=Fork&style=social">
   </a>  
 </p>
@@ -28,11 +28,11 @@ I Guess This Will Be Usefull For Many People.....😇.
 
 ##
 
-**If you need any more modes in repo or If you find out any bugs, mention in [@codexbotzsupport ](https://www.telegram.dog/codexbotzsupport)**
+**If you need any more modes in repo or If you find out any bugs, mention in [@MECommentBot ](https://www.telegram.dog/MECommentBot)**
 
 ### Features
 - Fully customisable.
-- Customisable welcome & Forcesub messages.
+- Customisable welcome messages.
 - More than one Posts in One Link.
 - Can be deployed on heroku directly.
 
@@ -44,7 +44,7 @@ I Guess This Will Be Usefull For Many People.....😇.
 ##
 ### Installation
 #### Deploy on Heroku
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/CodeXBotz/File-Sharing-Bot)</br>
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)</br>
 <a href="https://youtu.be/LCrkRTMkmzE">
   <img src="https://img.shields.io/badge/How%20to-Deploy-red?logo=youtube" width="147">
 </a><br>
@@ -52,58 +52,54 @@ I Guess This Will Be Usefull For Many People.....😇.
 **Thanks to [Erich](https://t.me/ErichDaniken) and his [InFoTel](https://t.me/InFoTel_Group) for this Video**
 
 #### Deploy in your VPS
-````bash
+`bash
 git clone https://github.com/CodeXBotz/File-Sharing-Bot
 cd File-Sharing-Bot
 pip3 install -r requirements.txt
 # <Create config.py appropriately>
 python3 main.py
-````
+`
 
 ### Admin Commands
 
-```
+
 /start - start the bot or get posts
 
 /batch - create link for more than one posts
 
 /genlink - create link for one post
 
-/users - view bot statistics
 
-/broadcast - broadcast any messages to bot users
-```
 
 ### Variables
 
-* `API_HASH` Your API Hash from my.telegram.org
-* `API_ID` Your API ID from my.telegram.org
-* `TG_BOT_TOKEN` Your bot token from @BotFather
-* `OWNER_ID` Must enter Your Telegram Id
-* `CHANNEL_ID` Your Channel ID eg:- -100xxxxxxxx
-* `ADMINS` Optional: A space separated list of user_ids of Admins, they can only create links
-* `START_MESSAGE` Optional: start message of bot, use HTML and <a href='https://github.com/codexbotz/File-Sharing-Bot/blob/main/README.md#start_message'>fillings</a>
-* `FORCE_SUB_MESSAGE`Optional:Force sub message of bot, use HTML and Fillings
-* `FORCE_SUB_CHANNEL` Optional: ForceSub Channel ID, leave 0 if you want disable force sub
+* API_HASH Your API Hash from my.telegram.org
+* API_ID Your API ID from my.telegram.org
+* TG_BOT_TOKEN Your bot token from @BotFather
+* OWNER_ID Must enter Your Telegram Id
+* CHANNEL_ID Your Channel ID eg:- -100xxxxxxxx
+* ADMINS Optional: A space separated list of user_ids of Admins, they can only create links
+* START_MESSAGE Optional: start message of bot, use HTML and <a href='https://github.com/shahsad-klr/File-Sharing-Bot/blob/main/README.md#start_message'>fillings</a>
+* FORCE_SUB_CHANNEL Optional: ForceSub Channel ID, leave 0 if you want disable force sub
 
 ### Extra Variables
 
-* `CUSTOM_CAPTION` put your Custom caption text if you want Setup Custom Caption, you can use HTML and <a href='https://github.com/CodeXBotz/File-Sharing-Bot/blob/main/README.md#custom_caption'>fillings</a> for formatting (only for documents)
-* `DISABLE_CHANNEL_BUTTON` Put True to Disable Channel Share Button, Default if False
+* CUSTOM_CAPTION put your Custom caption text if you want Setup Custom Caption, you can use HTML and <a href='https://github.com/shahsad-klr/File-Sharing-Bot/blob/main/README.md#custom_caption'>fillings</a> for formatting (only for documents)
+* DISABLE_CHANNEL_BUTTON Put True to Disable Channel Share Button, Default if False
 
 ### Fillings
-#### START_MESSAGE | FORCE_SUB_MESSAGE
+#### START_MESSAGE
 
-* `{first}` - User first name
-* `{last}` - User last name
-* `{id}` - User ID
-* `{mention}` - Mention the user
-* `{username}` - Username
+* {first} - User first name
+* {last} - User last name
+* {id} - User ID
+* {mention} - Mention the user
+* {username} - Username
 
 #### CUSTOM_CAPTION
 
-* `{filename}` - file name of the Document
-* `{previouscaption}` - Original Caption
+* {filename} - file name of the Document
+* {previouscaption} - Original Caption
 
 
 ## Support   
@@ -127,5 +123,5 @@ published by the Free Software Foundation, either version 3 of the License, or
 
 ##
 
-   **Star this Repo if you Liked it ⭐⭐⭐**
-
+   Star this Repo if you Liked it ⭐⭐⭐
+       ➡️ https://t.me/movies_emperio
