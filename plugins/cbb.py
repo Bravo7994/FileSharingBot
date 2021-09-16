@@ -1,5 +1,3 @@
-#(©)Codexbotz
-
 from pyrogram import __version__
 from bot import Bot
 from config import OWNER_ID
@@ -15,45 +13,10 @@ async def cb_handler(client: Bot, query: CallbackQuery):
             reply_markup = InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("🔙 BACK", callback_data = "back"),
                         InlineKeyboardButton("🔒 CLOSE", callback_data = "close")
                     ]
                 ]
             )
-        )
-    elif data == "close":
-        await query.message.delete()
-        try:
-            await query.message.reply_to_message.delete()
-        except:
-            pass
-    if data == "back":
-        uso = str(query.from_user.first_name)
-        text = f"<b>Hello {uso},</b>\n\nI Can Store 𝐌𝐎𝐕𝐈𝐄𝐒 𝐄𝐌𝐏𝐎𝐑𝐈𝐎 Files In This Bot And Other Users Can Access It From Special Link 📎\n\n<b><a href='https://t.me/movies_emperio'>YOU NEED TO JOIN IN OUR CHANNEL TO DOWNLOAD THE MOVIE FILES 📂</a></b>"
-
-        message_text = message.text
-        try:
-
-           command, argument = message_text.split()
-           text = text + f"\n\n<b>AFTER JOINED THE CHANNEL\n<a href='https://t.me/{client.username}?start={argument}'>👉 CLICK HERE</a></b>"
-    except ValueError:
-        pass
-    reply_markup = InlineKeyboardMarkup(
-                            [
-                                [
-                                    InlineKeyboardButton("👤 ABOUT ME", callback_data = "about"),
-                                    InlineKeyboardButton("🔒 CLOSE", callback_data = "close")
-                                ],
-                                [
-                                    InlineKeyboardButton("CLICK HERE TO JOIN THE CHANNEL", url = client.invitelink)
-                                ]
-                            ]
-                        )
-
-        await query.message.edit_text(
-            text = text,
-            reply_markup = reply_markup,
-            disable_web_page_preview = True
         )
     elif data == "close":
         await query.message.delete()
