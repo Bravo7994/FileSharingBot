@@ -30,7 +30,15 @@ async def cb_handler(client: Bot, query: CallbackQuery):
     if data == "back":
         uso = str(query.from_user.first_name)
         text = f"<b>Hello {uso},</b>\n\nI Can Store 𝐌𝐎𝐕𝐈𝐄𝐒 𝐄𝐌𝐏𝐎𝐑𝐈𝐎 Files In This Bot And Other Users Can Access It From Special Link 📎\n\n<b><a href='https://t.me/movies_emperio'>YOU NEED TO JOIN IN OUR CHANNEL TO DOWNLOAD THE MOVIE FILES 📂</a></b>"
-        reply_markup = InlineKeyboardMarkup(
+
+        message_text = message.text
+        try:
+
+           command, argument = message_text.split()
+           text = text + f"\n\n<b>AFTER JOINED THE CHANNEL\n<a href='https://t.me/{client.username}?start={argument}'>👉 CLICK HERE</a></b>"
+    except ValueError:
+        pass
+    reply_markup = InlineKeyboardMarkup(
                             [
                                 [
                                     InlineKeyboardButton("👤 ABOUT ME", callback_data = "about"),
