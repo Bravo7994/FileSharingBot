@@ -45,7 +45,6 @@ async def cb_handler(client: Bot, query: CallbackQuery):
         await query.message.edit_text(
             text = text,
             reply_markup = reply_markup,
-            quote = True,
             disable_web_page_preview = True
         )
     elif data == "close":
